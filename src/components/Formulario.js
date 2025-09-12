@@ -4,16 +4,19 @@ import { SafeAreaView } from "react-native-safe-area-context";
 export default function Formulario() {
     return (
         <SafeAreaView style={style.main}>
+            <Text style={style.Title}>Registro de Alumno</Text>
             <Text style={style.Texto}>Nombre:</Text>
-            <TextInput style={style.Input} placeholder="Ingrese su nombre"/>
+            <TextInput style={style.Input} placeholder="Ingrese su nombre" />
+            <Text style={style.Texto}>Carrera:</Text>
+            <TextInput editable={false} style={style.Input} placeholder="Ingrese su carrera" />
             <Text style={style.Texto}>Descripcion:</Text>
-            <TextInput multiline={true} numberOfLines={4} style={[style.Input, style.textArea]} placeholder="Describe tu personalidad"/>
+            <TextInput multiline={true} numberOfLines={4} style={[style.Input, style.textArea]} placeholder="Describe tu personalidad" />
             <Text style={style.Texto}>Correo Electronico:</Text>
-            <TextInput style={style.Input} placeholder="Ingrese su correo" keyboardType="email-address"/>
+            <TextInput style={style.Input} placeholder="Ingrese su correo" keyboardType="email-address" />
             <Text style={style.Texto}>Contraseña:</Text>
-            <TextInput style={style.Input} placeholder="*********" secureTextEntry/>
+            <TextInput style={style.Input} placeholder="*********" secureTextEntry />
             <Text style={style.Texto}>Telefono:</Text>
-            <TextInput style={style.Input} placeholder="123456" keyboardType="phone-pad"/>
+            <TextInput style={style.Input} placeholder="123456" keyboardType="phone-pad" />
         </SafeAreaView>
     );
 }
@@ -24,6 +27,16 @@ const style = StyleSheet.create({
         backgroundColor: '#d4b6d4ff',
         padding: Platform.OS === 'android' ? StatusBar.currentHeight : 44,
         padding: 16
+    },
+    Title: {
+        fontFamily: 'cursive',
+        fontSize: 40,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        color: '#ffffffff',
+        textShadowColor: '#690643ff',
+        textShadowOffset: { width: -1, height: 1 },
+        textShadowRadius: 10,
     },
     Texto: {
         fontFamily: 'Arial',
