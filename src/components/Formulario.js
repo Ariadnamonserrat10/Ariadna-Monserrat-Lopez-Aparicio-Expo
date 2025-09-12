@@ -4,8 +4,10 @@ import { SafeAreaView } from "react-native-safe-area-context";
 export default function Formulario() {
     return (
         <SafeAreaView style={style.main}>
-            <Text style={style.Texto}>Formulario</Text>
-            <TextInput placeholder="Ingrese su nombre"/>
+            <Text style={style.Texto}>Nombre:</Text>
+            <TextInput style={style.Input} placeholder="Ingrese su nombre"/>
+            <Text style={style.Texto}>Descripcion:</Text>
+            <TextInput multiline={true} numberOfLines={4} style={[style.Input, style.textArea]} placeholder="Describe tu personalidad"/>
         </SafeAreaView>
     );
 }
@@ -19,8 +21,21 @@ const style = StyleSheet.create({
     },
     Texto: {
         fontFamily: 'Arial',
-        fontSize: 20,
+        fontSize: 30,
         fontWeight: 'bold',
         marginTop: 20,
+    },
+    Input: {
+        borderWidth: 1,
+        borderColor: '#000000',
+        height: 40,
+        marginTop: 20,
+        padding: 10,
+        borderRadius: 8,
+        backgroundColor: '#ffffff'
+    },
+    textArea: {
+        height: 100,
+        textAlignVertical: 'top'
     },
 });
