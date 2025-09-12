@@ -1,4 +1,5 @@
-import { StyleSheet, View, Platform, StatusBar, Text, TextInput } from "react-native";
+import { StyleSheet, View, Platform, StatusBar, Text, TextInput,TouchableOpacity} from "react-native";
+import Icon from 'react-native-vector-icons/FontAwesome';
 import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Formulario() {
@@ -17,6 +18,11 @@ export default function Formulario() {
             <TextInput style={style.Input} placeholder="*********" secureTextEntry />
             <Text style={style.Texto}>Telefono:</Text>
             <TextInput style={style.Input} placeholder="123456" keyboardType="phone-pad" />
+            {/* Boton Grande con icono */}
+            <TouchableOpacity style={style.botonGrandeiCON}>
+                <Icon name="send" size={20} color="#ffffff" style={style.iconIZQ} />
+                <Text style={style.textoBotonGrande}>Enviar</Text>
+            </TouchableOpacity>
         </SafeAreaView>
     );
 }
@@ -57,5 +63,25 @@ const style = StyleSheet.create({
     textArea: {
         height: 100,
         textAlignVertical: 'top'
+    },
+    textoBotonGrande: {
+        color: '#ffffffff',
+        fontSize: 20,
+        fontWeight: 'bold',
+        textAlign: 'center',
+    },
+    iconIZQ: {
+        marginRight: 15, 
+        marginTop: 3,
+        alignSelf: 'center',
+    },
+    botonGrandeiCON: {
+        backgroundColor: '#571832ff', 
+        marginTop: 20,
+        flexDirection: 'row',
+        alignContent: 'center',
+        justifyContent: 'center',
+        paddingVertical: 12,
+        borderRadius: 15,
     },
 });
