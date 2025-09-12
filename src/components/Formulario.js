@@ -8,6 +8,12 @@ export default function Formulario() {
             <TextInput style={style.Input} placeholder="Ingrese su nombre"/>
             <Text style={style.Texto}>Descripcion:</Text>
             <TextInput multiline={true} numberOfLines={4} style={[style.Input, style.textArea]} placeholder="Describe tu personalidad"/>
+            <Text style={style.Texto}>Correo Electronico:</Text>
+            <TextInput style={style.Input} placeholder="Ingrese su correo" keyboardType="email-address"/>
+            <Text style={style.Texto}>Contraseña:</Text>
+            <TextInput style={style.Input} placeholder="*********" secureTextEntry/>
+            <Text style={style.Texto}>Telefono:</Text>
+            <TextInput style={style.Input} placeholder="123456" keyboardType="phone-pad"/>
         </SafeAreaView>
     );
 }
@@ -21,9 +27,10 @@ const style = StyleSheet.create({
     },
     Texto: {
         fontFamily: 'Arial',
-        fontSize: 30,
+        fontSize: 20,
         fontWeight: 'bold',
         marginTop: 20,
+        color: '#ffffffff',
     },
     Input: {
         borderWidth: 1,
