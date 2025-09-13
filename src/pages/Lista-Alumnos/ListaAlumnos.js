@@ -17,115 +17,19 @@ const ListaAlumnos = () => {
             <ScrollView style={{ padding: 10 }}>
                 <Text style={style.TC}>Alumnos de Aplicaciones Moviles</Text>
                 {/* Alumno 1  */}
-                <View style={style.card}>
-                    <Image style={style.avatar} source={{ uri: 'https://i.pinimg.com/736x/a4/11/f9/a411f94f4622cfa7c1a87f4f79328064.jpg' }} />
-                    <View style={style.cardinfo}>
-                        <Text style={style.username}>Ariadna Monserrat</Text>
-                        <Text style={style.userdetails}>Ing. en Sistemas Computacionales</Text>
-                        <TouchableOpacity style={style.saveButton}>
-                            <Text style={style.saveButtonText}>Ver mas</Text>
-                        </TouchableOpacity>
+                {[1,2,3,4,5,6].map(( ) => (
+                    <View style={style.card}>
+                        <Image style={style.avatar} source={{ uri: 'https://i.pinimg.com/736x/a4/11/f9/a411f94f4622cfa7c1a87f4f79328064.jpg' }} />
+                        <View style={style.cardinfo}>
+                            <Text style={style.username}>Ariadna Monserrat</Text>
+                            <Text style={style.userdetails}>Ing. en Sistemas Computacionales</Text>
+                            <TouchableOpacity style={style.saveButton}>
+                                <Text style={style.saveButtonText}>Ver mas</Text>
+                            </TouchableOpacity>
+                        </View>
                     </View>
-                </View>
-                {/* Alumno 2  */}
-                <View style={style.card}>
-                    <Image style={style.avatar} source={{ uri: 'https://i.pinimg.com/736x/a4/11/f9/a411f94f4622cfa7c1a87f4f79328064.jpg' }} />
-                    <View style={style.cardinfo}>
-                        <Text style={style.username}>Ariadna Monserrat</Text>
-                        <Text style={style.userdetails}>Ing. en Sistemas Computacionales</Text>
-                        <TouchableOpacity style={style.saveButton}>
-                            <Text style={style.saveButtonText}>Ver mas</Text>
-                        </TouchableOpacity>
-                    </View>
-                </View>
-                {/* Alumno 3  */}
-                <View style={style.card}>
-                    <Image style={style.avatar} source={{ uri: 'https://i.pinimg.com/736x/a4/11/f9/a411f94f4622cfa7c1a87f4f79328064.jpg' }} />
-                    <View style={style.cardinfo}>
-                        <Text style={style.username}>Ariadna Monserrat</Text>
-                        <Text style={style.userdetails}>Ing. en Sistemas Computacionales</Text>
-                        <TouchableOpacity style={style.saveButton}>
-                            <Text style={style.saveButtonText}>Ver mas</Text>
-                        </TouchableOpacity>
-                    </View>
-                </View>
-                {/* Alumno 4  */}
-                <View style={style.card}>
-                    <Image style={style.avatar} source={{ uri: 'https://i.pinimg.com/736x/a4/11/f9/a411f94f4622cfa7c1a87f4f79328064.jpg' }} />
-                    <View style={style.cardinfo}>
-                        <Text style={style.username}>Ariadna Monserrat</Text>
-                        <Text style={style.userdetails}>Ing. en Sistemas Computacionales</Text>
-                        <TouchableOpacity style={style.saveButton}>
-                            <Text style={style.saveButtonText}>Ver mas</Text>
-                        </TouchableOpacity>
-                    </View>
-                </View>
-                {/* Alumno 5  */}
-                <View style={style.card}>
-                    <Image style={style.avatar} source={{ uri: 'https://i.pinimg.com/736x/a4/11/f9/a411f94f4622cfa7c1a87f4f79328064.jpg' }} />
-                    <View style={style.cardinfo}>
-                        <Text style={style.username}>Ariadna Monserrat</Text>
-                        <Text style={style.userdetails}>Ing. en Sistemas Computacionales</Text>
-                        <TouchableOpacity style={style.saveButton}>
-                            <Text style={style.saveButtonText}>Ver mas</Text>
-                        </TouchableOpacity>
-                    </View>
-                </View>
-                {/* Alumno 6 */}
-                <View style={style.card}>
-                    <Image style={style.avatar} source={{ uri: 'https://i.pinimg.com/736x/a4/11/f9/a411f94f4622cfa7c1a87f4f79328064.jpg' }} />
-                    <View style={style.cardinfo}>
-                        <Text style={style.username}>Ariadna Monserrat</Text>
-                        <Text style={style.userdetails}>Ing. en Sistemas Computacionales</Text>
-                        <TouchableOpacity style={style.saveButton}>
-                            <Text style={style.saveButtonText}>Ver mas</Text>
-                        </TouchableOpacity>
-                    </View>
-                </View>
-                {/* Alumno 7 */}
-                <View style={style.card}>
-                    <Image style={style.avatar} source={{ uri: 'https://i.pinimg.com/736x/a4/11/f9/a411f94f4622cfa7c1a87f4f79328064.jpg' }} />
-                    <View style={style.cardinfo}>
-                        <Text style={style.username}>Ariadna Monserrat</Text>
-                        <Text style={style.userdetails}>Ing. en Sistemas Computacionales</Text>
-                        <TouchableOpacity style={style.saveButton}>
-                            <Text style={style.saveButtonText}>Ver mas</Text>
-                        </TouchableOpacity>
-                    </View>
-                </View>
-                {/* Alumno 8 */}
-                <View style={style.card}>
-                    <Image style={style.avatar} source={{ uri: 'https://i.pinimg.com/736x/a4/11/f9/a411f94f4622cfa7c1a87f4f79328064.jpg' }} />
-                    <View style={style.cardinfo}>
-                        <Text style={style.username}>Ariadna Monserrat</Text>
-                        <Text style={style.userdetails}>Ing. en Sistemas Computacionales</Text>
-                        <TouchableOpacity style={style.saveButton}>
-                            <Text style={style.saveButtonText}>Ver mas</Text>
-                        </TouchableOpacity>
-                    </View>
-                </View>
-                {/* Alumno 9 */}
-                <View style={style.card}>
-                    <Image style={style.avatar} source={{ uri: 'https://i.pinimg.com/736x/a4/11/f9/a411f94f4622cfa7c1a87f4f79328064.jpg' }} />
-                    <View style={style.cardinfo}>
-                        <Text style={style.username}>Ariadna Monserrat</Text>
-                        <Text style={style.userdetails}>Ing. en Sistemas Computacionales</Text>
-                        <TouchableOpacity style={style.saveButton}>
-                            <Text style={style.saveButtonText}>Ver mas</Text>
-                        </TouchableOpacity>
-                    </View>
-                </View>
-                {/* Alumno 10 */}
-                <View style={style.card}>
-                    <Image style={style.avatar} source={{ uri: 'https://i.pinimg.com/736x/a4/11/f9/a411f94f4622cfa7c1a87f4f79328064.jpg' }} />
-                    <View style={style.cardinfo}>
-                        <Text style={style.username}>Ariadna Monserrat</Text>
-                        <Text style={style.userdetails}>Ing. en Sistemas Computacionales</Text>
-                        <TouchableOpacity style={style.saveButton}>
-                            <Text style={style.saveButtonText}>Ver mas</Text>
-                        </TouchableOpacity>
-                    </View>
-                </View>
+                ))}
+
             </ScrollView>
             {/* Fin del contenido (Lista de alumnos) */}
         </View>
