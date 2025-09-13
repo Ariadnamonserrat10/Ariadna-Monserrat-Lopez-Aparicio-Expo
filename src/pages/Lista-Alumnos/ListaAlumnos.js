@@ -17,7 +17,7 @@ const ListaAlumnos = () => {
             <ScrollView style={{ padding: 10 }}>
                 <Text style={style.TC}>Alumnos de Aplicaciones Moviles</Text>
                 {/* Alumno 1  */}
-                {[1,2,3,4,5,6].map(( ) => (
+                {[1, 2, 3, 4, 5, 6].map(() => (
                     <View style={style.card}>
                         <Image style={style.avatar} source={{ uri: 'https://i.pinimg.com/736x/a4/11/f9/a411f94f4622cfa7c1a87f4f79328064.jpg' }} />
                         <View style={style.cardinfo}>
@@ -32,6 +32,27 @@ const ListaAlumnos = () => {
 
             </ScrollView>
             {/* Fin del contenido (Lista de alumnos) */}
+
+            {/* navbar */}
+            <View style={style.navbar}>
+                <View style={style.navItem}>
+                    <Icon name="home" size={20} />
+                    <Text style={style.navText}>Inicio</Text>
+                </View>
+                <View style={style.navItem}>
+                    <Icon name="search" size={20} />
+                    <Text style={style.navText}>Buscar</Text>
+                </View>
+                <View style={style.navItem}>
+                    <Icon name="user" size={20} />
+                    <Text style={style.navText}>Perfil</Text>
+                </View>
+                <View style={style.navItem}>
+                    <Icon name="gear" size={20} />
+                    <Text style={style.navText}>Configuración</Text>
+                </View>
+            </View>
+            {/* fin del navbar */}
         </View>
     )
 }
@@ -102,7 +123,7 @@ const style = StyleSheet.create({
     saveButton: {
         backgroundColor: '#5f236eff',
         paddingVertical: 10,
-        paddingHorizontal: 20,
+        paddingHorizontal: 30,
         borderRadius: 20,
         marginTop: 10,
         alignSelf: 'flex-end',
@@ -110,7 +131,23 @@ const style = StyleSheet.create({
     },
     saveButtonText: {
         color: '#fff',
-        fontSize: 16,
+        fontSize: 15,
         fontWeight: 'bold',
+    },
+    navbar: {
+        height: 70,
+        backgroundColor: '#ffffffff',
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-around',
+        borderTopWidth: 1,
+    },
+    navItem: {
+        alignItems: 'center',
+    },
+    navText: {
+        fontSize: 12,
+        color: '#000000',
+        marginTop: 4,
     },
 });
