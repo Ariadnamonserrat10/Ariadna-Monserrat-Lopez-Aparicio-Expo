@@ -8,6 +8,9 @@ export default function FormularioV2() {
             <ScrollView>
                 <Text style={style.Title}>Formulario V2</Text>
                 <View style={style.contar}>
+                    <TouchableOpacity style={style.salida}>
+                        <Icon name="close" size={25} />
+                    </TouchableOpacity>
                     <Image style={style.imagen} source={{ uri: 'https://i.pinimg.com/736x/98/13/89/9813892efee6c55e09b4da2d1a6987b2.jpg' }} />
                     <Text style={style.name}>Ariadna Monserrat</Text>
                     <View style={style.InfoCont}>
@@ -126,5 +129,12 @@ const style = StyleSheet.create({
         justifyContent: 'center',
         paddingVertical: 12,
         borderRadius: 15,
+    },
+    salida: {
+        alignSelf: 'flex-end',
+        padding: 5,
+        marginBottom: -10,
+        backgroundColor: '#e9e0e9ff',
+        borderRadius: 20,
     },
 });
